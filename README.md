@@ -1,17 +1,67 @@
-# "this readme file will be modified at a later time"
-
 <br/>
 <br/>
-<h1 align="center"> Daily mood tracker</h1>
+<h1 align="center"> DAILY MOOD TRACKER</h1>
 
 <img src="./src//assets//preview.gif"/>
+
+<br/>
+<br/>
+
+# About the project
+
+The objective behind this project is to learn about
+
+-   Docker (containers, images)
+-   Vitest (testing)
+
+<br/>
+<br/>
+
+# How To Use
+
+-   ### Using Visual Studio Code
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/MedtheVorg/DailyMoodTracker-.git
+
+# Go into the project folder
+$ cd dailymoodtracker
+
+# Install dependencies
+$ npm install
+
+# Run the dev server
+$ npm run dev
+```
+
+-   ### Using Docker
+    using a CLI run the following commands :
+
+```bash
+#clone the docker image from dockerhub
+docker pull mohamedlem/dailymoodtracker:dev
+
+#create and run container
+docker run --name containername_c -p 5173:5173 mohamedlem/dailymoodtracker:dev
+
+#and that's it
+
+#to stop the container run this command
+docker stop containername_c
+
+```
 
 # Docker image
 
 https://hub.docker.com/repository/docker/mohamedlem/dailymoodtracker/general
-<br/>
 
-# Docker
+<br/>
+<br/><br/>
+
+# What is docker ?
 
 -   docker uses Containers to run applications in isolated environments with specific dependencies.
 -   docker main purpose is to maintain containers
@@ -80,8 +130,3 @@ docker start containername
 # delete all images / containers / images
 
 docker system prune -a
-
-# Live preview
-
-https://app-8a5126c1.zvgz4d.on-acorn.io/
-https://acorn.io/medthevorg/acorn
