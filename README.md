@@ -35,22 +35,24 @@ $ npm install
 
 # Run the dev server
 $ npm run dev
+
+# Run the tests
+$ npm run test
+
 ```
 
 -   ### Using Docker
     using a CLI run the following commands :
 
 ```bash
-#clone the docker image from dockerhub
-docker pull mohamedlem/dailymoodtracker:dev
+# Clone the docker image from dockerhub
+$ docker pull mohamedlem/dailymoodtracker:dev
 
-#create and run container
-docker run --name containername_c -p 5173:5173 mohamedlem/dailymoodtracker:dev
+# Create and run container
+$ docker run --name containername_c -p 5173:5173 mohamedlem/dailymoodtracker:dev
 
-#and that's it
-
-#to stop the container run this command
-docker stop containername_c
+# To stop the container run this command
+$ docker stop containername_c
 
 ```
 
